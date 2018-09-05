@@ -1,37 +1,23 @@
 <template>
   <div>
-    <el-container>
-      <el-header height="auto">
-        <home-header></home-header>
-      </el-header>
-      <el-main height="auto">
-        <home-main></home-main>
-      </el-main>
-      <el-footer height="auto">
-        <home-footer></home-footer>
-      </el-footer>
-    </el-container>
+    <home-header></home-header>
+    <home-content></home-content>
+    <home-footer></home-footer>
   </div>
 </template>
 <script>
-import homeHeader from './components/Header'
-import homeMain from './components/Main'
-import homeFooter from './components/Footer'
+import HomeHeader from 'common/header/Header'
+import HomeContent from './components/Content'
+import HomeFooter from 'common/footer/Footer'
 
 export default {
   name: 'Home',
   components: {
-    homeHeader,
-    homeMain,
-    homeFooter
+    HomeHeader,
+    HomeContent,
+    HomeFooter
   }
 }
 </script>
 <style lang="stylus" scoped>
-.el-header
-  padding 0
-.el-main
-  padding 0
-.el-footer
-  padding 0
 </style>
