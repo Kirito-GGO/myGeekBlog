@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui'
+import { Menu, MenuItem, Pagination } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // reset.css 重置基本样式 保证各种浏览器显示效果一致
 import 'styles/reset.css'
+// 字体
+import 'styles/fonts.css'
 
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(Pagination)
 
 /* eslint-disable no-new */
 new Vue({

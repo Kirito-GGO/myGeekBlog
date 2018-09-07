@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'HappyKiller';
+  src: url('/static/fonts/HappyKiller.eot'); /* IE9 兼容模式 */
+  src: url('/static/fonts/HappyKiller.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/static/fonts/HappyKiller.woff') format('woff'),
+    /* 现代浏览器 */ url('/static/fonts/HappyKiller.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/static/fonts/HappyKiller.svg#grablau')
+      format('svg'); /* Legacy iOS */
+}

@@ -1,20 +1,19 @@
 <template>
-  <div class="header-box">
-    <home-header ref="headerdom"></home-header>
-    <home-content class="content"></home-content>
-    <home-footer ref="footerdom"></home-footer>
+  <div class="diary-box">
+    <diary-header ref="headerdom"></diary-header>
+    <diary-content class="content">随笔</diary-content>
+    <diary-footer ref="footerdom"></diary-footer>
     <go-top :headerDomH="headerDomH"
             :footerDomH="footerDomH"></go-top>
   </div>
 </template>
 <script>
-import HomeHeader from 'common/header/Header'
-import HomeContent from './components/Content'
-import HomeFooter from 'common/footer/Footer'
+import DiaryHeader from 'common/header/Header'
+import DiaryFooter from 'common/footer/Footer'
+import DiaryContent from './components/Content'
 import GoTop from 'common/goTop/GoTop'
-
 export default {
-  name: 'Home',
+  name: 'Diary',
   data () {
     return {
       headerDomH: 0,
@@ -22,9 +21,9 @@ export default {
     }
   },
   components: {
-    HomeHeader,
-    HomeContent,
-    HomeFooter,
+    DiaryHeader,
+    DiaryFooter,
+    DiaryContent,
     GoTop
   },
   mounted () {
@@ -35,7 +34,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-.header-box
+.diary-box
   height 100%
   .content
     min-height calc(100% - 883px)

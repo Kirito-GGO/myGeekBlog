@@ -1,19 +1,19 @@
 <template>
   <div class="content">
-    <home-list></home-list>
-    <home-list></home-list>
-    <home-list></home-list>
-    <home-list></home-list>
+    <diary-list></diary-list>
+    <diary-list></diary-list>
+    <diary-list></diary-list>
+    <diary-list></diary-list>
     <pagination></pagination>
   </div>
 </template>
 <script>
-import HomeList from './List'
+import DiaryList from './List'
 import Pagination from 'common/pagination/Pagination'
 export default {
-  name: 'homeMain',
+  name: 'DiaryContent',
   components: {
-    HomeList,
+    DiaryList,
     Pagination
   }
 }
