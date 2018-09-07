@@ -1,7 +1,7 @@
 <template>
   <div class="diary-box">
     <diary-header ref="headerdom"></diary-header>
-    <diary-content class="content">随笔</diary-content>
+    <diary-content class="content"></diary-content>
     <diary-footer ref="footerdom"></diary-footer>
     <go-top :headerDomH="headerDomH"
             :footerDomH="footerDomH"></go-top>

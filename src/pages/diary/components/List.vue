@@ -2,7 +2,8 @@
   <div class="list"
        @mouseenter="wireTransitionCome"
        @mouseleave="wireTransitionEnter">
-    <div class="title-img"></div>
+    <div class="title-img"
+         :class="imgMagnify"></div>
     <h2 class="title">世间安得双全法， 不负如来不负卿。</h2>
     <div class="box">
       <button class="btn">阅读全文</button>
@@ -16,15 +17,18 @@ export default {
   name: 'DiaryList',
   data () {
     return {
-      wireWidth: ''
+      wireWidth: '',
+      imgMagnify: ''
     }
   },
   methods: {
     wireTransitionCome () {
       this.wireWidth = 'wire-transition-come'
+      this.imgMagnify = 'img-magnify-come'
     },
     wireTransitionEnter () {
       this.wireWidth = 'wire-transition-enter'
+      this.imgMagnify = 'img-magnify-enter'
     }
   }
 }
@@ -35,7 +39,17 @@ export default {
   .title-img
     height 6.5rem
     margin-bottom 0.6rem
-    background-color #ccc
+    background url('/static/images/3.jpeg')
+    background-size 100% 100%
+    background-position center
+    background-repeat no-repeat
+    box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.7)
+  .img-magnify-come
+    background-size 110% 110%
+    transition all 0.7s ease-in-out
+  .img-magnify-enter
+    background-size 100% 100%
+    transition all 0.4s ease-in-out
   .title
     font-size 0.6rem
     margin-bottom 0.4rem

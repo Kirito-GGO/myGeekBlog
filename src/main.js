@@ -9,6 +9,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'styles/reset.css'
 // 字体
 import 'styles/fonts.css'
+// 引入iconfont
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 
