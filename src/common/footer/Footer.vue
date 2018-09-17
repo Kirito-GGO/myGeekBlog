@@ -9,16 +9,19 @@
         </div>
       </div>
       <div class="celebrated">
-        <p class="sentence">实践是最好的老师,但是,如果不能从中学习,再多的实践也没有用.</p>
+        <p class="sentence">实践是最好的老师，但是，如果不能从中学习，再多的实践也没有用。</p>
         <p class="provenance">《人月神话》</p>
       </div>
       <div class="img-box">
-        <span class="iconfont">&#xeb02;</span>
-        <span class="iconfont iconfont2">&#xe7ba;</span>
-      </div>
-      <div class="img-box">
-        <span class="iconfont">&#xe624;</span>
-        <span class="iconfont iconfont2">&#xe610;</span>
+        <div>
+          <span class="iconfont icon">&#xe60d;</span>
+          <a class="icon-text"
+             href="https://www.bilixili.xyz/">https://www.bilixili.xyz/</a>
+        </div>
+        <div>
+          <span class="iconfont icon">&#xe644;</span>
+          <span class="icon-text">tzj13188660369@gmail.com</span>
+        </div>
       </div>
     </div>
     <div class="bottom-item">
@@ -88,14 +91,23 @@ export default {
       .provenance
         font-size 0.3rem
     .img-box
+      width 27%
       display flex
-      justify-content center
+      justify-content space-between
       align-items center
       color #fff
-      .iconfont
-        font-size 0.7rem
-      .iconfont2
-        font-size 0.6rem
+      margin 0 auto
+      margin-top 0.6rem
+      .icon
+        font-size 0.5rem
+        vertical-align middle
+        margin-right 0.1rem
+      .icon-text
+        color #fff
+        font-size 0.3rem
+        vertical-align middle
+      .icon-text:first-of-type
+        text-decoration underline
   .bottom-item
     height 1rem
     background-color #2b2b2b

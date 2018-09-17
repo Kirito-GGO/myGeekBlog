@@ -1,6 +1,9 @@
 <template>
   <div class="header">
     <div class="header-title">
+      <a class="iconfont to-github"
+         href="https://github.com/Kirito-GGO"
+         target="_blank">&#xe898;</a>
       <h1 class="title">Kirito’s Blog</h1>
       <h1 class="text">Practice is the best of all instructors.</h1>
     </div>
@@ -37,6 +40,12 @@ export default {
     flex-direction column
     justify-content center
     align-items center
+    .to-github
+      font-size 0.7rem
+      color #fff
+      position absolute
+      top 1rem
+      right 1rem
     .title
       color #fff
       text-align center

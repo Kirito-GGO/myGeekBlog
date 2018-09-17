@@ -1,19 +1,36 @@
 <template>
   <div class="classify-box">
-    <home-header></home-header>
-    <div class="content">归档</div>
-    <home-footer></home-footer>
+    <classify-header ref="headerdom"></classify-header>
+    <classify-content class="content"></classify-content>
+    <classify-footer ref="footerdom"></classify-footer>
+    <go-top :headerDomH="headerDomH"
+            :footerDomH="footerDomH"></go-top>
   </div>
 </template>
 <script>
-import HomeHeader from 'common/header/Header'
-import HomeFooter from 'common/footer/Footer'
+import ClassifyHeader from 'common/header/Header'
+import ClassifyFooter from 'common/footer/Footer'
+import ClassifyContent from './components/Content'
+import GoTop from 'common/goTop/GoTop'
 
 export default {
-  name: 'Home',
+  name: 'Classify',
+  data () {
+    return {
+      headerDomH: 0,
+      footerDomH: 0
+    }
+  },
   components: {
-    HomeHeader,
-    HomeFooter
+    ClassifyHeader,
+    ClassifyFooter,
+    ClassifyContent,
+    GoTop
+  },
+  mounted () {
+    // 获取头部和页脚的dom高度
+    this.headerDomH = this.$refs.headerdom.$el.offsetHeight
+    this.footerDomH = this.$refs.footerdom.$el.offsetHeight
   }
 }
 </script>
